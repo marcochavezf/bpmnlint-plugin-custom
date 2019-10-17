@@ -1,4 +1,4 @@
-# bpmnlint-plugin-example
+# bpmnlint-plugin-custom
 
 [![Build Status](https://travis-ci.org/bpmn-io/bpmnlint-plugin-example.svg?branch=master)](https://travis-ci.org/bpmn-io/bpmnlint-plugin-example)
 
