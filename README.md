@@ -1,8 +1,8 @@
 # bpmnlint-plugin-custom
 
-[![Build Status](https://travis-ci.org/bpmn-io/bpmnlint-plugin-example.svg?branch=master)](https://travis-ci.org/bpmn-io/bpmnlint-plugin-example)
+[![Build Status](https://travis-ci.org/bpmn-io/bpmnlint-plugin-custom.svg?branch=master)](https://travis-ci.org/bpmn-io/bpmnlint-plugin-custom)
 
-An example [bpmnlint](https://github.com/bpmn-io/bpmnlint) plug-in.
+An custom [bpmnlint](https://github.com/bpmn-io/bpmnlint) plug-in.
 
 
 ## About
@@ -14,12 +14,12 @@ This plugin shows how to contribute [rules](#add-rules) and
 ## Add Rules
 
 The [`./rules`](./rules) folder contains rules that are made available via
-this plug-in. Configure them with the `example` prefix in your `.bpmnlintrc`:
+this plug-in. Configure them with the `custom` prefix in your `.bpmnlintrc`:
 
 ```json
 {
   "rules": {
-    "example/no-manual-task": "warn"
+    "custom/no-manual-task": "warn"
   }
 }
 ```
@@ -36,7 +36,7 @@ to extend from using `extends` in the bpmnlint configuration:
 {
   "extends": [
     "bpmnlint:recommended",
-    "plugin:example/recommended"
+    "plugin:custom/recommended"
   ]
 }
 ```
