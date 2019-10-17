@@ -1,6 +1,6 @@
 {
   "name": "bpmnlint-plugin-custom-messages",
-  "version": "0.5.1",
+  "version": "1.0.0",
   "description": "A bpmnlint custom plug-in",
   "main": "index.js",
   "scripts": {
