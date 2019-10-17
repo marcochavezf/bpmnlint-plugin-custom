@@ -1,46 +1,24 @@
-# bpmnlint-plugin-custom
+# bpmnlint-plugin-custom-messages
 
-[![Build Status](https://travis-ci.org/bpmn-io/bpmnlint-plugin-custom.svg?branch=master)](https://travis-ci.org/bpmn-io/bpmnlint-plugin-custom)
-
-An custom [bpmnlint](https://github.com/bpmn-io/bpmnlint) plug-in.
+An custom [bpmnlint](https://github.com/bpmn-io/bpmnlint) plug-in to report messages from bpmn-js elements
 
 
 ## About
 
-This plugin shows how to contribute [rules](#add-rules) and
-[configuration](#add-configuration) to bpmnlint.
+This plugin only has two rules by default: `error-message` and `warning-message` which report the correspoing message using [bpmn-js-bpmnlint](https://github.com/bpmn-io/bpmn-js-bpmnlint). 
 
+In order to show a message set a string in the property `node.businessObject.customErrorMessage` or `node.businessObject.customWarningMessage` where `node` is a bpmn-js element.
 
-## Add Rules
-
-The [`./rules`](./rules) folder contains rules that are made available via
-this plug-in. Configure them with the `custom` prefix in your `.bpmnlintrc`:
-
-```json
-{
-  "rules": {
-    "custom/no-manual-task": "warn"
-  }
-}
-```
-
-Checkout [`./test.js`](./test.js) to learn how to test your rules.
-
-
-## Add Configuration
-
-As part of the [`./index.js`](./index.js) the plug-in exposes configurations
-to extend from using `extends` in the bpmnlint configuration:
+Also set the plugin in the `.bpmnlintrc` file:
 
 ```json
 {
   "extends": [
     "bpmnlint:recommended",
-    "plugin:custom/recommended"
+    "plugin:custom-messages/recommended"
   ]
 }
 ```
-
 
 ## License
 
