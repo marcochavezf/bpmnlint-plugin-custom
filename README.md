@@ -16,7 +16,11 @@ Also set the plugin in the `.bpmnlintrc` file:
   "extends": [
     "bpmnlint:recommended",
     "plugin:custom-messages/recommended"
-  ]
+  ],
+  "rules": {
+    "custom-messages/error-message": "error",
+    "custom-messages/warning-message": "warn"
+  }
 }
 ```
 
