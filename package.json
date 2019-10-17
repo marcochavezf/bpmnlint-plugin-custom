@@ -1,7 +1,7 @@
 {
-  "name": "bpmnlint-plugin-example",
+  "name": "bpmnlint-plugin-custom-messages",
   "version": "0.5.1",
-  "description": "A bpmnlint example plug-in",
+  "description": "A bpmnlint custom plug-in",
   "main": "index.js",
   "scripts": {
     "all": "npm test",

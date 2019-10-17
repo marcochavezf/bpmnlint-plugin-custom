@@ -4,13 +4,13 @@ const {
 
 
 /**
- * Rule that reports manual tasks being used.
+ * Rule that reports missing targetNamespace on bpmn:Definitions.
  */
 module.exports = function() {
 
   function check(node, reporter) {
-    if (is(node, 'bpmn:ManualTask')) {
-      reporter.report(node.id, 'Element has disallowed type bpmn:ManualTask');
+    if (node.customErrorMessage) {
+      reporter.report(node.id, node.customErrorMessage);
     }
   }
 
