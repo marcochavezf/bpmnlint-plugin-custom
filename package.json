@@ -23,7 +23,7 @@
   "devDependencies": {
     "bpmnlint": "^6.1.0",
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^10.1.0"
   },
   "dependencies": {
     "bpmnlint-utils": "^1.0.2"
